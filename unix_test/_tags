@@ -1,0 +1,2 @@
+<*.*>: package(alcotest), package(ctypes.stubs), package(unix-errno.unix)
+<*.*>: use_sys_resource_stubs

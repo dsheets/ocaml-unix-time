@@ -1,0 +1,3 @@
+<*.*>: package(ctypes), package(ctypes.stubs), package(unix-errno.unix)
+<unix_time_stubs.c>: use_ctypes, use_time_util
+<*.{cma,cmxa}>: use_time_stubs

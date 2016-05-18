@@ -1,0 +1,17 @@
+version = "0.1.0"
+description = "Unix time.h types and bindings"
+requires = ""
+archive(byte) = "time.cma"
+archive(bytes, plugin) = "time.cma"
+archive(native) = "time.cmxa"
+archive(native, plugin) = "time.cmxs"
+exists_if = "time.cma"
+
+package "unix" (
+  requires = "unix-time unix ctypes.stubs unix-errno.unix"
+  archive(byte) = "unix_time.cma"
+  archive(bytes, plugin) = "unix_time.cma"
+  archive(native) = "unix_time.cmxa"
+  archive(native, plugin) = "unix_time.cmxs"
+  exists_if = "unix_time.cma"
+)
